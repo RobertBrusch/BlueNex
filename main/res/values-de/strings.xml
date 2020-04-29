@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE resources [
+    <!ENTITY appname "BlueNex">
+    ]>
+<resources>
+    <string name="password">Passwort</string>
+    <string name="log_in">Anmelden</string>
+    <string name="register">Registrieren</string>
+    <string name="forgot_password"><u>Passwort vergessen?</u></string>
+    <string name="menu">Menu</string>
+    <string name="locks">Schlösser</string>
+    <string name="welcome">Willkommen @ &appname;</string>
+</resources>

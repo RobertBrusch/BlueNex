@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE resources [
+    <!ENTITY appname "BlueNex">
+    ]>
+<resources>
+    <string name="app_name" translatable="false">&appname;</string>
+    <string name="content_description_image_view" translatable="false">ImageView</string>
+    <string name="mail" translatable="false">E-Mail</string>
+    <string name="password">Password</string>
+    <string name="log_in">Log In</string>
+    <string name="register">Register</string>
+    <string name="forgot_password"><u>forgot password?</u></string>
+    <string name="menu">Menu</string>
+    <string name="locks">Locks</string>
+    <string name="welcome">Welcome @ &appname;</string>
+    <string name="bluenex_user" translatable="false">BlueNex User</string>
+</resources>

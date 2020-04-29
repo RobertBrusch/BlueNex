@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_horizontal_45"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.45"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_vertical_5"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintGuide_percent="0.05"
+        android:orientation="vertical"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_vertical_95"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintGuide_percent="0.95"
+        android:orientation="vertical"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/guideline_horizontal_45"
+        android:background="@color/colorPrimary"/>
+
+    <EditText
+        android:id="@+id/edit_text_user_name"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        style="@style/TextStyleGrey"
+        android:paddingStart="5dp"
+        android:paddingEnd="5dp"
+        android:hint="@string/mail"
+        android:background="@drawable/background_grey_rounded_corners"
+        app:layout_constraintStart_toEndOf="@id/guideline_vertical_5"
+        app:layout_constraintEnd_toStartOf="@id/guideline_vertical_95"
+        app:layout_constraintTop_toBottomOf="@id/guideline_horizontal_45"/>
+
+    <EditText
+        android:id="@+id/edit_text_user_password"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        style="@style/TextStyleGrey"
+        android:paddingStart="5dp"
+        android:paddingEnd="5dp"
+        android:hint="@string/password"
+        android:background="@drawable/background_grey_rounded_corners"
+        app:layout_constraintStart_toEndOf="@id/guideline_vertical_5"
+        app:layout_constraintEnd_toStartOf="@id/guideline_vertical_95"
+        app:layout_constraintTop_toBottomOf="@id/edit_text_user_name"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        app:layout_constraintTop_toBottomOf="@id/edit_text_user_password"
+        app:layout_constraintEnd_toEndOf="@id/edit_text_user_password"
+        style="@style/TextStyleGrey"
+        android:text="@string/forgot_password"/>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toEndOf="@id/guideline_vertical_5"
+        app:layout_constraintEnd_toStartOf="@id/guideline_vertical_95"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="10dp">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/register"
+            style="@style/TextStyleButton"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/background_red_rounded_corners"/>
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/register"
+            style="@style/TextStyleButton"
+            android:layout_marginStart="10dp"
+            android:background="@drawable/background_red_rounded_corners"/>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
